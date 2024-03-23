@@ -135,3 +135,66 @@
 //     if(i===3)continue;
 //     console.log(i);
 // }
+
+//21
+// const foo=()=>console.log("first");
+// const baa=()=>setTimeout(()=>console.log("second"));
+// const zaa=()=>console.log("third");
+
+// zaa();
+// baa();
+// foo();
+//output:third,first,second
+
+//22
+// const person ={name:'Lydia'}
+// function sayHi(age){
+//     return `${this.name} is ${age}`
+// }
+// console.log(sayHi.call(person,21));
+// console.log(sayHi.bind(person,21));
+
+//output:lidiya is 21,return the function
+
+//23
+// function sayHi(){
+//     return (()=>0)()
+// }
+// console.log(typeof sayHi());
+//output:Number
+
+//24
+// function sayHi(){
+//     return ()=>0
+// }
+// console.log(typeof sayHi());
+//output:function  
+
+//25
+// console.log(typeof typeof 1);
+//output:string
+
+//26
+// const arr=[1,2,3]
+// arr[9]=11
+// console.log(arr);
+// output:[1,2,3,empty*3,11]
+
+//27
+// const arr =[1,2,3]
+// arr[3]=arr
+// console.log(arr);
+//output:third position must be infinit and assign arry.
+
+//28
+//everything in javascript is primitive or object
+
+//29
+console.log(!!null);
+console.log(!!"");
+console.log(!!1);
+
+//30
+// console.log(setInterval(()=>console.log("hii"),1000));
+// console.log(setInterval(()=>console.log("hii"),1000));
+// console.log(setInterval(()=>console.log("hii"),1000));
